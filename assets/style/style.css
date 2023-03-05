@@ -1,0 +1,83 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@keyframes moveRight {
+	from {
+		left: 0%;
+		
+	}
+	to {
+		left: 100%;
+	}
+}
+@keyframes moveleft {
+	from {
+		right: 0%;
+		
+	}
+	to {
+		right: 100%;
+	}
+}
+
+.main-road{
+margin-top: 200px
+;
+}
+.road{
+    position: relative;
+    background-color: darkgray;
+    height: 300px;
+    
+}
+
+.left-car{
+    animation-name: moveRight;
+	animation-delay: 1s;
+	animation-duration: 5s;
+	animation-timing-function: linear;
+
+	animation-iteration-count: infinite;
+
+    animation-iteration-count: 5;
+
+	animation-fill-mode: forwards;
+
+    
+
+    position: absolute;
+    max-width: 300px;
+    width: 100%;
+    top: 150px;
+    left: 0;
+
+}
+.right-car{
+    animation-name: moveleft;
+	animation-delay: 1s;
+	animation-duration: 5s;
+	animation-timing-function: linear;
+
+    
+
+	animation-iteration-count: infinite;
+    animation-iteration-count: 5;
+
+
+	
+	animation-fill-mode: forwards;
+
+
+
+
+
+    position: absolute;
+    right: 0;
+    
+    max-width: 300px;
+    width: 100%;
+}
+
